@@ -1,5 +1,5 @@
 import { v } from "convex/values";
-import { mutation } from "./_generated/server";
+import { mutation, query } from "./_generated/server";
 
 export const syncUser = mutation({
   args: {
@@ -19,5 +19,14 @@ export const syncUser = mutation({
       ...args,
       role: "candidate",
     });
+  },
+});
+
+export const getUsers = query({
+  handler: async (ctx) => {
+    const identity = await ctx.auth.getUserIdentity();
+    if (!identity) throw new Error("User is not Authenticated");
+    const users = await ctx.db.query("users").collect();
+    return users;
   },
 });

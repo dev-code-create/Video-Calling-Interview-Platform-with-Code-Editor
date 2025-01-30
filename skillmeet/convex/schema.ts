@@ -10,4 +10,4 @@ export default defineSchema({
   }).index("by_clerk_id", ["clerkId"]),
 });
 
-// https://together-monitor-33.clerk.accounts.dev
+//
