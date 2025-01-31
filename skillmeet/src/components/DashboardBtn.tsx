@@ -2,20 +2,21 @@
 
 import Link from "next/link";
 import { Button } from "./ui/button";
-import { SparkleIcon } from "lucide-react";
+import { SparklesIcon } from "lucide-react";
+import { useUserRole } from "./hooks/useUserRole";
 
-const DashboardBtn = () => {
-  const isCandidate = false;
+function DasboardBtn() {
+  const { isCandidate, isLoading } = useUserRole();
 
-  if (isCandidate) return null;
+  if (isCandidate || isLoading) return null;
+
   return (
     <Link href={"/dashboard"}>
       <Button className="gap-2 font-medium" size={"sm"}>
-        <SparkleIcon className="size-4" />
+        <SparklesIcon className="size-4" />
         Dashboard
       </Button>
     </Link>
   );
-};
-
-export default DashboardBtn;
+}
+export default DasboardBtn;
