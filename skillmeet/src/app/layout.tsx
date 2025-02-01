@@ -4,8 +4,8 @@ import "@stream-io/video-react-sdk/dist/css/styles.css";
 import "./globals.css";
 import { RedirectToSignIn, SignedIn, SignedOut } from "@clerk/nextjs";
 
-import ConvexClerkProvider from "@/components/ui/providers/ConvexClerkProvider";
-import { ThemeProvider } from "@/components/ui/providers/ThemeProviders";
+import ConvexClerkProvider from "@/components/providers/ConvexClerkProvider";
+import { ThemeProvider } from "@/components/providers/ThemeProviders";
 import Navbar from "@/components/Navbar";
 
 const geistSans = localFont({

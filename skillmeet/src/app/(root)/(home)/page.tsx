@@ -1,6 +1,6 @@
 "use client";
 import ActionCard from "@/components/ActionCard";
-import { useUserRole } from "@/components/hooks/useUserRole";
+
 import { QUICK_ACTIONS } from "@/constants";
 import { useQuery } from "convex/react";
 import { api } from "../../../../convex/_generated/api";
@@ -8,6 +8,7 @@ import { useState } from "react";
 
 import MeetingModal from "@/components/MeetingModal";
 import { useRouter } from "next/navigation";
+import { useUserRole } from "@/hooks/useUserRole";
 
 export default function Home() {
   const { isInterviewer, isCandidate, isLoading } = useUserRole();
