@@ -53,7 +53,7 @@ function MeetingModal({
               Cancel
             </Button>
             <Button
-              // onClick={handleStart}
+              onClick={handleStart}
               disabled={isJoinMeeting && !meetingUrl.trim()}
             >
               {isJoinMeeting ? "Join Meeting" : "Start Meeting"}
