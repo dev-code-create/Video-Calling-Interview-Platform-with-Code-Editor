@@ -56,7 +56,7 @@ function MeetingSetup({ onSetupComplete }: { onSetupComplete: () => void }) {
 
           {/* CARD CONTROLS */}
 
-          <Card className="md:col-span-1 p-6">
+          <Card className="md:col-span-1 p-6 ">
             <div className="h-full flex flex-col">
               {/* MEETING DETAILS  */}
               <div>
@@ -66,10 +66,10 @@ function MeetingSetup({ onSetupComplete }: { onSetupComplete: () => void }) {
                 </p>
               </div>
 
-              <div className="flex-1 flex flex-col justify-between ">
+              <div className="flex-1 flex flex-col justify-between mt-6">
                 <div className="spacey-6 mt-8 ">
                   {/* CAM CONTROL */}
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between mb-2">
                     <div className="flex items-center gap-3">
                       <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
                         <CameraIcon className="h-5 w-5 text-primary" />
@@ -90,7 +90,7 @@ function MeetingSetup({ onSetupComplete }: { onSetupComplete: () => void }) {
                   </div>
 
                   {/* MIC CONTROL */}
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between mb-2">
                     <div className="flex items-center gap-3">
                       <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
                         <MicIcon className="h-5 w-5 text-primary" />
@@ -109,7 +109,7 @@ function MeetingSetup({ onSetupComplete }: { onSetupComplete: () => void }) {
                   </div>
 
                   {/* DEVICE SETTINGS */}
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between mb-2">
                     <div className="flex items-center gap-3">
                       <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
                         <SettingsIcon className="h-5 w-5 text-primary" />

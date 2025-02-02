@@ -6,8 +6,8 @@ import DashboardBtn from "./DashboardBtn";
 
 const Navbar = () => {
   return (
-    <nav>
-      <div className="flex h-16 items-center px-4 container mx-auto">
+    <nav className="border-b text-muted-foreground border-gray-800 bg-background">
+      <div className="flex h-16 items-center px-4 container mx-auto ">
         {/* Left Side Logo */}
         <Link
           href="/"
